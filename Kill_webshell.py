@@ -40,16 +40,16 @@ def Scan(path):
                     for rule in rulelist:
                         result = re.compile(rule).findall(filestr)
                         if result:
-                            print '文件：'+os.path.join(root,filespath)
-                            print '恶意代码：'+str(result[0])
+                            print 'Document：'+os.path.join(root,filespath)
+                            print 'Unwanted Code：'+str(result[0])
                             print '\n\n'
                             break
 
 if os.path.lexists(sys.argv[1]):
     print('\n\n开始扫描：'+sys.argv[1])
-    print('               可疑文件                 ')
+    print('            Suspicious Files            ')
     print('########################################')
     Scan(sys.argv[1])
-    print('提示：扫描完成-- O(∩_∩)O哈哈~')
+    print('Attention：Checking finished.')
 else:
-    print '提示：指定的扫描目录不存在---  我靠( \'o′)！！凸'
+    print 'Attention: The path is not exist.'
