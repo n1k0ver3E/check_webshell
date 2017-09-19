@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#blog:www.jincon.com
 
 import os
 import sys
